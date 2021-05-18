@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+
+<body>
+    <div class="container" style="max-width: 400px;">
+        <div class="row">
+            <div class="col s12"
+                style="background-color: red; text-align: center; height: 70px; padding-top: 7px; font-size: 32px; color: white;">
+                S/. 21.60</div>
+
+            <div class="input-field col s6">
+                <select>
+                    <option value="" disabled selected>FACTURA</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <label>DOCUMENTO</label>
+            </div>
+            <div class="input-field col s6">
+                <select>
+                    <option value="" disabled selected>CONTADO</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <label>TIPO DE PAGO</label>
+            </div>
+            <div class="col s6">
+                SERIE
+                <div class="input-field inline">
+                    <input id="email_inline" type="email" class="validate">
+                    <label for="email_inline">Serie</label>
+                </div>
+            </div>
+            <div class="col s6">
+                N° DE VENTA
+                <div class="input-field inline">
+                    <input id="email_inline" type="email" class="validate">
+                    <label for="email_inline">Venta</label>
+                </div>
+            </div>
+            <div class="col s12">
+                N° DE VENTA
+                <div class="input-field inline">
+                    <input id="email_inline" type="email" class="validate">
+                    <label for="email_inline">Venta</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+          });
+        
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('select').formSelect();
+          });
+    </script>
+</body>
+
+</html>
